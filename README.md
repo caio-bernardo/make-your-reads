@@ -5,7 +5,10 @@
 <!-- INSERT BANNER HERE -->
 
 <!-- INSERT BADGES HERE -->
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=for-the-badge)](https://github.com/RichardLitt/standard-readme)
+![Crates.io Version](https://img.shields.io/crates/v/make-your-reads?style=for-the-badge)
+![Crates.io Total Downloads](https://img.shields.io/crates/d/make-your-reads?style=for-the-badge)
+
 
 <!-- INSERT SHORT DESCRIPTION HERE -->
 
