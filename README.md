@@ -100,11 +100,11 @@ See [README Standard](https://github.com/RichardLitt/standard-readme).
 
 See [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-### How to make a good CODE_OF_CONDUCT?
+#### How to make a good CODE_OF_CONDUCT?
 
 See [Contributor Convenat](https://www.contributor-covenant.org/)
  
-### How to make a good CONTRIBUTING?
+#### How to make a good CONTRIBUTING?
 
 See [CONTRIBUTING.md](https://contributing.md/example/) (no its not the file in the repo)
 
