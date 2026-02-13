@@ -34,7 +34,7 @@
 
 ## Contributing
 
-Feel free to [Open a New Issue](/issue/new) or [Submit a Pull Request](/pr/new).
+Feel free to [Open a New Issue](/issues/new) or [Submit a Pull Request](/compare).
 See our [CONTRIBUTING](CONTRIBUTING.md) file for more information in how to contribute in more specific ways. 
 Don't forget to check our [Code of Conduct](CODE_OF_CONDUCT.md) for the repository guidelines.
 

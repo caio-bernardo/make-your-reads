@@ -131,7 +131,7 @@ See [CONTRIBUTING.md](https://contributing.md/example/) (no its not the file in 
 
 ## Contributing
 
-Feel free to [Open a New Issue](https://github.com/caio-bernardo/make-your-reads/issue/new) or [Submit a Pull Request](https://github.com/caio-bernardo/make-your-reads/pr/new).
+Feel free to [Open a New Issue](https://github.com/caio-bernardo/make-your-reads/issues/new) or [Submit a Pull Request](https://github.com/caio-bernardo/make-your-reads/compare).
 See our [CONTRIBUTING](CONTRIBUTING.md) file for more information about contribution in specific ways. 
 Don't forget to check our [Code of Conduct](CODE_OF_CONDUCT.md) for the repository guidelines.
 
