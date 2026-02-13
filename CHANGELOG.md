@@ -34,5 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CODE_OF_CONDUCT
 - CONTRIBUTING
 
+### Fixed
+- Broken links in Templates
+
 [Unreleased]: https://github.com/caio-bernardo/make-your-reads/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/caio-bernardo/make-your-reads/releases/tag/v1.0.0
