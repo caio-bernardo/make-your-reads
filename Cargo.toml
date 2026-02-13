@@ -1,8 +1,13 @@
 [package]
 name = "make-your-reads"
+description = "Easily build common file of your repository, e.g. README, LICENSE, CODE_OF_CONDUCT, CONTRIBUTING and more."
 version = "0.1.0"
 edition = "2024"
 license = "GPL-3.0-or-later"
+authors = [ "Caio Bernardo <me@caiobernardo.top>" ]
+repository = "https://github.com/caiovb/make-your-reads"
+keywords = ["cli", "file-generator" ]
+
 [[bin]]
 name = "mkyr"
 path = "src/main.rs"

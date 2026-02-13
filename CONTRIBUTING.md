@@ -30,7 +30,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 This project and everyone participating in it is governed by the
 [CONTRIBUTING.md Code of Conduct](blob/master/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
-to <caiovb@protonmail.com>.
+to <me@caiobernardo.top>.
 
 
 ## I Have a Question

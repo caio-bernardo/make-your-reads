@@ -8,17 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 <!--Insert upcomming updates for future releases or use as a roadmap-->
 
-### Added
-<!-- New Features -->
-- Subcommand to create READMEs
-- Subcommand to create CODE OF CONDUCTs
-- Subcommand to create CONTRIBUTINGs
-- Subcommand to create CHANGELOGs
-
-### Changed
+<!--### Changed-->
 <!--Changes in existing functionality-->
 
-### Removed
+<!--### Removed-->
 
 <!--### Deprecated-->
 
@@ -28,7 +21,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <!--### Security-->
 <!--Vulnerability fixes-->
 
-## [0.1.0] -- 2026-01-01
+## [1.0.0] -- 2026-02-13
 
-[Unreleased]: /compare/HEAD
-[0.1.0]: /releases/tag/v0.1.0
+### Added
+- Subcommand to create READMEs
+- Subcommand to create CODE OF CONDUCTs
+- Subcommand to create CONTRIBUTINGs
+- Subcommand to create CHANGELOGs
+- Embedded files to the binary
+- GPL-3.0-or-later License
+- This Changelog
+- CODE_OF_CONDUCT
+- CONTRIBUTING
+
+[Unreleased]: /compare/v1.0.0...HEAD
+[1.0.0]: /releases/tag/v1.0.0
