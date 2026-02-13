@@ -3,7 +3,7 @@ use std::{fs::File, io::Write};
 use clap::{Parser, Subcommand, ValueEnum};
 
 #[derive(Parser)]
-#[command(version, about)]
+#[command(name = "mkyr", version, about)]
 struct Cli {
     #[command(subcommand)]
     command: Option<Commands>,
@@ -57,10 +57,18 @@ enum License {
     UNLICENSED,
 }
 
+// Templates
 const README_TEMPLATE: &'static str = include_str!("templates/README-template.md");
 const COC_TEMPLATE: &'static str = include_str!("templates/COC-template.md");
 const CONTRIBUTING_TEMPLATE: &'static str = include_str!("templates/CONTRIBUTING-template.md");
 const CHANGELOG_TEMPLATE: &'static str = include_str!("templates/CHANGELOG-template.md");
+
+// Licenses
+const MIT_LICENSE: &'static str = include_str!("licenses/MIT");
+const CCBYSA4_LICENSE: &'static str = include_str!("licenses/CC-BY-SA-4");
+const CCBY4_LICENSE: &'static str = include_str!("licenses/CC-BY-4");
+const GPL3_LICENSE: &'static str = include_str!("licenses/GPL-3");
+const UNLICENSED_LICENSE: &'static str = include_str!("licenses/UNLICENSED");
 
 fn main() {
     let cli = Cli::parse();
@@ -71,14 +79,8 @@ fn main() {
             println!("New README created. Remember to change the file for your personal needs.")
         }
         Some(Commands::License { name }) => {
-            let file_name = match name {
-                License::MIT => "src/licenses/MIT",
-                License::CCBYSA4 => "src/licenses/CC-BY-SA-4",
-                License::CCBY4 => "src/licenses/CC-BY-4",
-                License::GPL3 => "src/licenses/GPL-3",
-                License::UNLICENSED => "src/licenses/UNLICENSED",
-            };
-            std::fs::copy(file_name, cli.path.as_deref().unwrap_or("LICENSE.md")).unwrap();
+            let file = create_license(name);
+            save_file(cli.path.as_deref().unwrap_or("LICENSE"), &file, cli.force);
             println!("New LICENSE created. Remember to change the file for your personal needs.")
         }
         Some(Commands::Coc) => {
@@ -155,4 +157,14 @@ fn create_contrib(project_name: &str, contact: &str, documentation_url: &str) ->
 
 fn create_changelog() -> String {
     CHANGELOG_TEMPLATE.to_string()
+}
+
+fn create_license(license: License) -> String {
+    match license {
+        License::MIT => MIT_LICENSE.to_string(),
+        License::CCBYSA4 => CCBYSA4_LICENSE.to_string(),
+        License::CCBY4 => CCBY4_LICENSE.to_string(),
+        License::GPL3 => GPL3_LICENSE.to_string(),
+        License::UNLICENSED => UNLICENSED_LICENSE.to_string(),
+    }
 }
