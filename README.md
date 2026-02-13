@@ -114,7 +114,7 @@ See [CONTRIBUTING.md](https://contributing.md/example/) (no its not the file in 
 
  ## Acknowledgements 
  
- This project was draws inspiration from:
+ This project has take inspiration from:
 
  - [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
  - [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
