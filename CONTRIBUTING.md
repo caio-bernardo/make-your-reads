@@ -138,7 +138,7 @@ git checkout update-docs
 
 4. Tests your code, you can run the application through `cargo run -- [subcommands]` or even write your own tests. Just make sure everything you are sending is working as inteded.
 
-5. Once you are done. Open a [new pull request](/pr/new), describe what issue you're solving (reference any previous issue you created about the topic). 
+5. Once you are done. Open a [new pull request](https://github.com/caio-bernardo/make-your-reads/pr/new), describe what issue you're solving (reference any previous issue you created about the topic). 
 
 6. Finally, wait for a review, refactor (if needed) and repeat.
 

@@ -34,7 +34,7 @@ cargo install make-your-reads
 
 ### Downloading
 
-You can download the prebuilt binaries in the [release section](/releases)
+You can download the prebuilt binaries in the [release section](https://github.com/caio-bernardo/make-your-reads/releases)
 
 ### Building Manually
 
@@ -131,13 +131,13 @@ See [CONTRIBUTING.md](https://contributing.md/example/) (no its not the file in 
 
 ## Contributing
 
-Feel free to [Open a New Issue](/issue/new) or [Submit a Pull Request](/pull/new).
-See our [CONTRIBUTING](/blob/main/CONTRIBUTING.md) file for more information about contribution in specific ways. 
-Don't forget to check our [Code of Conduct](/blob/main/CODE_OF_CONDUCT.md) for the repository guidelines.
+Feel free to [Open a New Issue](https://github.com/caio-bernardo/make-your-reads/issue/new) or [Submit a Pull Request](https://github.com/caio-bernardo/make-your-reads/pr/new).
+See our [CONTRIBUTING](CONTRIBUTING.md) file for more information about contribution in specific ways. 
+Don't forget to check our [Code of Conduct](CODE_OF_CONDUCT.md) for the repository guidelines.
 
 
 ## License
 
-This project is under the GPL-3.0-or-later license. For more info see [LICENSE](/blob/main/LICENSE).
+This project is under the GPL-3.0-or-later license. For more info see [LICENSE](LICENSE).
 
 Made with [Make Your Reads](https://github.com/caio-bernardo/make-your-reads).
