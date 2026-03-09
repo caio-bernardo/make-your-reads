@@ -23,7 +23,7 @@ This project comes from the desire of having a common structure between my repos
 <!-- ## Security -->
  ## Background 
  
-This project is in fact a new version of a [old one](https://github.com/caio-bernardo/MakeReadme) I've abbandoned years ago since working on it didn't bring me anymore joy. Anyway, I commonly find begginners (including myself) struggling in structuring good repositories, from choosing a license to writing a CONTRIBUITING page, it can be difficult and I feel this things are not normally presented to us. So this projects aims to provide new developers with a good starting point, from where they can improve their work. You can quickly create a your files and fill with some basic information and improve them as your project evolves.
+This project is in fact a new version of an [old one](https://github.com/caio-bernardo/MakeReadme) I've abbandoned years ago, because working on it didn't bring me joy anymore. Anyway, I commonly find begginners (including myself) struggling in structuring good repositories, from choosing a license to writing a CONTRIBUITING page, it can be difficult and I feel this things are not normally presented to us. So this projects aims to provide new developers with a good starting point, from where they can improve their work. You can quickly create your files and fill them with some basic information, improving them as your project evolves.
 
 ## Install
 
