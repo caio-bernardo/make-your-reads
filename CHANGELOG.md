@@ -6,7 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
 <!--Insert upcomming updates for future releases or use as a roadmap-->
+
+### Fixed -- 2026-03-23
+
+- Removed success message from printing during fail
 
 <!--### Changed-->
 <!--Changes in existing functionality-->
@@ -24,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] -- 2026-02-13
 
 ### Added
+
 - Subcommand to create READMEs
 - Subcommand to create CODE OF CONDUCTs
 - Subcommand to create CONTRIBUTINGs
@@ -35,6 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CONTRIBUTING
 
 ### Fixed
+
 - Broken links in Templates
 
 [Unreleased]: https://github.com/caio-bernardo/make-your-reads/compare/v1.0.0...HEAD

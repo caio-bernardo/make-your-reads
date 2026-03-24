@@ -75,24 +75,19 @@ fn main() {
     match cli.command {
         Some(Commands::Readme { title }) => {
             let file = create_readme(&title);
-            save_file(cli.path.as_deref().unwrap_or("README.md"), &file, cli.force);
-            println!("New README created. Remember to change the file for your personal needs.")
+            solve_saver(cli.path.as_deref().unwrap_or("README.md"), &file, cli.force);
         }
         Some(Commands::License { name }) => {
             let file = create_license(name);
-            save_file(cli.path.as_deref().unwrap_or("LICENSE"), &file, cli.force);
-            println!("New LICENSE created. Remember to change the file for your personal needs.")
+            solve_saver(cli.path.as_deref().unwrap_or("LICENSE"), &file, cli.force);
         }
         Some(Commands::Coc) => {
             let file = create_coc();
-            save_file(
+            solve_saver(
                 cli.path.as_deref().unwrap_or("CODE_OF_CONDUCT.md"),
                 &file,
                 cli.force,
             );
-            println!(
-                "New CODE_OF_CONDUCT created. Remember to change the file for your personal needs."
-            )
         }
         Some(Commands::Contrib {
             project_name,
@@ -104,39 +99,47 @@ fn main() {
                 contact.as_deref().unwrap_or(""),
                 documentation_url.as_deref().unwrap_or(""),
             );
-            save_file(
+            solve_saver(
                 cli.path.as_deref().unwrap_or("CONTRIBUTING.md"),
                 &file,
                 cli.force,
             );
-            println!(
-                "New CONTRIBUTING created. Remember to change the file for your personal needs."
-            )
         }
         Some(Commands::Changelog) => {
             let file = create_changelog();
-            save_file(
+            solve_saver(
                 cli.path.as_deref().unwrap_or("CHANGELOG.md"),
                 &file,
                 cli.force,
             );
-            println!("New CHANGELOG created. Remember to change the file for your personal needs.")
         }
         None => println!("No command provided. See --help for more."),
     };
 }
 
-fn save_file(file_name: &str, content: &str, force: bool) {
+fn save_file(file_name: &str, content: &str, force: bool) -> Result<String, String> {
     // Caso o arquivo exista ou eu não possa confirmar sua existência. Aborte.
     if !force && std::fs::exists(file_name).ok().is_none_or(|v| v) {
-        println!(
+        Err(format!(
             "File {} seems to already exists. Use --force to override it.",
             file_name
-        )
+        ))
     } else {
         let mut f = File::create(file_name).expect("Failed to created file");
         f.write_all(content.as_bytes())
             .expect("Failed to write file");
+        Ok(format!(
+            "[FUCk] New {} created. Remember to change the file for your personal needs.",
+            file_name
+        ))
+    }
+}
+
+// Resolve a saving operation, printing the result to the stdout
+fn solve_saver(filepath: &str, contents: &str, force: bool) {
+    match save_file(filepath, &contents, force) {
+        Ok(msg) => println!("{}", msg),
+        Err(err) => println!("{}", err),
     }
 }
 
